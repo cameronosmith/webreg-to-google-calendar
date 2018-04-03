@@ -1,0 +1,416 @@
+/* SSO Login Screen Styles - 
+
+Author: Cristian Horta
+Date: June 24, 2013
+
+*/
+
+
+/* CWO Template resets */ 
+
+input[type="password"] {
+	padding: .25em;
+	border: 1px solid #aaa;
+}
+
+#tdr_crumbs { 
+	display: none;
+}
+
+/*end rests*/
+.s-type {
+	color:#666; 
+	font-weight:400;
+}
+
+.sso-screen {
+	background-color: #eeeeee;
+	float: left;
+	min-height: 50px;
+	padding: 10px;
+	position: relative;
+	width: 65%;
+}
+
+.sso-right-col {
+	width: 30%;
+	float: right;
+}
+
+
+.sso-pic { 
+	float: right;
+	padding: 0 0 10px;
+	position: relative;
+	max-width: 100%;
+}
+
+
+.sso-links { 
+	float: right;
+	min-height: 50px;
+	padding: 0 0 10px;
+	position: relative;
+	max-width: 100%;
+}
+
+.sso-links h3 {
+	color: #666;
+}
+
+.sso-links ul {
+	border-top: 1px solid #ccc;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.sso-links li {
+	color: #666;
+	margin-bottom: .5em;
+}
+
+.log-options {
+	display: block;
+	float: right;
+	font-size: 11px;
+	margin: 5px;
+}
+
+.log-info {
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	width: 284px;
+}
+
+.log-type {
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	width: auto;
+}
+
+.login-option-select {
+	float: left;
+	margin-top: 10px;
+	width: 285px;
+}
+
+
+.login-other {
+	background-position: 0 10px;
+	background-repeat: no-repeat;
+	border-left: 1px solid #ccc;
+	float: right;
+	margin-top: 15px;
+	min-height: 261px;
+	padding-left: 35px;
+	width: 250px;
+}
+
+
+.log-info p, .login-other p {
+	color: #666;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+.log-info input[type="text"] {
+	border: 1px solid #999;
+	border-radius: 0;
+	height: 27px;
+	padding: .25em  .25em .25em 26px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	width: 250px;
+}
+
+.log-info input[type="password"] {
+	border: 1px solid #999;
+	border-radius: 0;
+	height: 27px;
+	padding: .25em  .25em .25em 26px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width: 250px;
+}
+
+
+.log-info input:focus {
+  border: 1px solid transparent;
+}
+
+.log-info input:focus {		
+	color: inherit;
+	border: 1px solid #007a9e;
+	outline: none;
+}
+
+.f-error {
+	border: 1px solid #F00 !important;
+	color: #F00;
+}
+
+select {
+	color: #333;
+	margin-bottom: 15px;
+	width: 80%;
+}
+
+.sso-button {
+	color: #fff;
+	cursor: pointer;
+	background: #1b739a;
+    border: none;
+	border-radius: none;
+	float: right;
+	height: 35px;
+	margin: 10px 0 0  0;
+	text-shadow: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width: 94px;
+}
+
+.b-container { 
+	overflow: hidden;
+}
+
+.sso-button:hover {
+	background: #116990;
+}
+
+.sso-button:active {
+	position: relative;
+	top: 1px;
+}
+
+
+.user {
+	background-image: url(../../_images/user.png);
+	background-repeat:no-repeat;
+	background-position: 0 4px;
+}
+
+.user:focus {
+	background-image: url(../../_images/user_active.png);
+}
+
+
+.pass {
+	height: 25px;
+	background-image: url(../../_images/key.png);
+	background-repeat:no-repeat;
+	background-position: 0 4px;
+}
+
+.pass:focus {
+	background-image: url(../../_images/key_active.png);
+}
+
+.error {
+	margin-top: 25px;
+}
+
+.wait-screen h2{
+	margin: 20px 0 20px 0;
+}
+
+
+
+.tip {
+	clear: both;
+	color: #23435e;
+	position: relative;
+	float: none;
+	padding-top: 24px;
+	font-size: .8em;
+}
+
+.sso-info { 
+	background: url(../../_images/info.png) no-repeat;
+	display: block;
+	float: left;	
+	height: 16px;
+	margin: 0 5px 0 0;
+	width: 16px;
+}
+
+.wait-screen {
+	overflow: hidden;
+}
+
+.loading {
+	clear: none !important;
+	float: left;
+	height: 95px !important;
+	margin: 0 20px 0;
+	width: 44px;
+	background-position: top;
+}
+
+/* --------------------
+
+ MEDIA QUERIES 
+
+-------------------- */
+
+@media screen and (max-width: 980px) {
+	
+	
+	.login-other {
+		width: 220px;
+	}
+
+}
+
+@media screen and (max-width: 860px) {
+	
+	
+	.login-other {
+		padding-left: 0;
+		text-align: right;
+		width: 37%;	
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	
+	.search-button {
+		display: none !important;
+	}
+
+
+
+	
+}
+
+@media screen and (max-width: 749px) {
+	
+	.login-option-select {
+		float: none;
+		margin: auto;
+	}
+	
+	.login-other {
+		border-left: 0;
+		border-top: 1px solid #ccc;
+		clear:both;
+		float: none;
+		margin: 20px auto;
+		min-height: 0;
+		padding: 15px 0;
+		text-align: left;
+		width: 285px;
+	}
+	
+	.tip {
+		padding-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+	
+	
+	h1.signing  {
+		margin: 10px auto 20px;
+		width: 93%;
+	}
+
+	.s-type {
+		color:#666; 
+		font-weight:400;
+	}
+	
+	.sso-screen {
+		float: none;
+		margin: 0 auto;
+		width: 90%;
+	}
+	
+	.log-info { 
+		padding: 0;
+	}
+	
+	.login-option-select, .log-info {
+		width: 100%;
+	}
+	
+	.log-info input[type="text"] {
+		background-position: 0 8px;
+		height: 38px;
+		width: 90%;
+	}
+	
+	.log-info input[type="password"] {
+		background-position: 0 8px;
+		height: 38px;
+		width: 90%;
+	}
+	
+	.log-options {
+		margin: 15px 0;
+		float: left;
+		font-size: 12px;
+	}
+	
+	.sso-button {
+		float: left;
+		height: 48px;
+	}
+	
+	.login-other { 
+		text-align: left;
+		width: auto;
+	}
+	
+	.sso-right-col {
+		clear: both;
+		float: none;
+		margin: 10px auto;
+		width: 90%;
+	}
+	
+	.sso-pic {
+		display: none;
+	}
+	
+	.sso-links {
+		float: none !important;
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 385px) {
+	
+	.s-type {
+		clear: both;
+		display: block;
+	}
+	
+	.log-info input[type="text"] {
+		width: 88%;
+	}
+	
+	.log-info input[type="password"] {
+		width: 88%;
+	}
+	
+	.sso-button {
+		font-size: 15px;
+		text-align: center;
+		width: 99%;
+	}
+	
+	.loading {
+		visibility: hidden;
+		width: 0px;
+	}
+}
