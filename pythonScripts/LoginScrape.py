@@ -20,7 +20,7 @@ method to login to webreg and return a list of Enrolled Classes objects
 """
 def loginRetrieveListOfCourses(username,password):
     #navigate to page
-    browser = webdriver.PhantomJS('phantomjs')
+    browser = webdriver.PhantomJS()
 
     browser.get('https://act.ucsd.edu/webreg2')
     #login
